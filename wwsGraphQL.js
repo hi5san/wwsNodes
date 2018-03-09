@@ -52,7 +52,8 @@ module.exports = function(RED) {
 		var _headers = {
 				//Authorization: `Bearer ${token}`,
 				jwt : token,
-				'content-type' : 'application/graphql'
+				'content-type' : 'application/graphql',
+				'x-graphql-view' : 'PUBLIC, BETA'
 		};
 
 		//var _query = "query getSpaceId{spaces(first:200){items{id title}}}";
